@@ -1,0 +1,83 @@
+
+/*** Header ***/
+
+header {
+   
+    //Disposition Flex
+    display: flex;
+    flex-direction: column;
+
+    .top {
+     
+        // Disposition flex
+        display: flex;
+        justify-content: space-between;
+        
+        .logo {
+            width: 10%;
+        
+            #logo {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                
+            }
+        }
+
+        /*** Barre de recherche ***/
+        #recherche {
+            margin : 2rem 0;
+            display: flex;
+            justify-content: center;
+                
+            #categories-select , input, button{
+                margin : 0;
+                padding : 1rem 0.5rem;
+            }
+
+            input {
+                padding-right: 10rem;
+                    
+            }
+
+            button {
+                background-color: $black;
+                border: none;
+                
+                .fa-search {
+                    color : white;
+                     padding-left : 1rem;
+                    padding-right : 1rem;
+                }
+            }
+
+        }
+    
+        /*** 3 icones ***/
+        .icone-header {
+            width: 10%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            a {
+                color: black;
+            }
+            
+        }
+
+        .fa {
+            align-self: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    /*** La NavBar ***/
+
+    #nav {
+        background-color: $black;
+        padding: 1rem 2rem;
+        
+    }
+
+}

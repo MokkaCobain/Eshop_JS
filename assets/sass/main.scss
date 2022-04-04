@@ -1,0 +1,35 @@
+@import "base/reset";
+@import "base/colors";
+
+@import "layout/accueil";
+@import "layout/panier";
+
+/* MON RESET */
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: inherit;
+	font-size: $defautFontSize;
+	font-family: $myFont;
+	line-height: 1.7;
+
+	
+}
+
+/* Sizing des principales parties */
+
+header {
+	height : auto;
+}
+main {
+    height: 70%;
+	width: auto;
+}
+
+footer {
+	height: 15vh;
+} 

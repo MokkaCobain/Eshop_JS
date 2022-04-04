@@ -1,0 +1,44 @@
+
+/*** Section Bottom ***/
+
+#bottom {
+
+    background-color: $blue;
+    
+    .bottom-grey {
+       
+        .payments-inner {
+            
+            background-color: $grey;
+
+            //Disposition Flex
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .payment {
+                width: 20%;
+                padding : 2rem ;
+
+                //Disposition Flex
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                i {
+                    font-size: 2rem;  
+                }
+
+                /*Texte */
+                .payment-titre {
+                    text-transform: uppercase;
+                    font-weight:700;
+                }
+
+                .payment-text {
+                    font-weight : 400;
+                }
+            }
+        }
+    }
+}

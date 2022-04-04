@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--RESPONSIVE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SEO-->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>Panier | Eshop</title>
+
+    <!--SEO suite-->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eshop. votre panier en cours">
+    <meta name="description"
+        content="Votre panier de commande. Livraison garantie 48h par des mecs sous payés. C'est ça le E-commerce ! ">
+    <meta property="og:url" content="https://www.eshopt-achat-en-ligne/panier.fr">
+
+    <!--Favicon-->
+    <link rel="icon" href="favicon.svg">
+    <!--STYLE-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--Div .top-->
+        <div class="top">
+            <!--Logo-->
+            <div class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo Eshop" id="logo">
+            </div>
+
+            <!--Div #recherche-->
+            <div id="recherche">
+
+                <!--Liste options-->
+                <select name="categories" id="categories-select" class="border border-1 rounded">
+                    <option value="">All Category</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                </select>
+
+                <!--Input-->
+                <input type="search" placeholder="Search Products Here..." class="border border-1 rounded">
+                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                <!--Fin div #rechercher-->
+            </div>
+
+            <!--Div .icone-header-->
+            <div class="icone-header">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+            </div>
+            <!--Fin Div .top-->
+        </div>
+
+        <!--NavBar-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark sticky-top mx-4">
+
+            <div class="container-fluid">
+
+                <!--Le menu burger = toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mesLiensDeNavigation" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!--Les liens de la Nav-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+
+                        <!--Lien avec liste déroulante-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <!---Liste déroulante-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Lien avec liste déroulante-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <!---Liste déroulante-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Lien avec liste déroulante-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <!---Liste déroulante-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <!--Fin du header-->
+    </header>
+    <main>
+        <!--Début .carousel-->
+        <section id="bandeau" class="carousel row-lg mx-1 mt-2 h-100">
+
+            <div class="col h-100 pt-2">
+
+                <!--Div qui contient le carousel et ses boutons-->
+                <div id="bandeauCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+
+                    <!--Div qui contient toutes les Slide + Titres-->
+                    <div class="carousel-inner mx-4">
+
+                        <!--Titre SLIDE 1-->
+                        <div id="slideUne" class="carousel-item active">
+
+                            <div class="carousel-titre">
+
+                                <h1>Make Your Site Stunning With Large Title</h1>
+                                <p>Hispter style is a fashion trending for Gentleman and Lady with tattoos. You'll
+                                    become so cool and
+                                    attractive with your's girl. Now let comee hare and grab it now</p>
+                                <button class="btn mt-3">SHOP NOW</button>
+
+                            </div>
+                        </div>
+
+                        <!--Fin Div qui contient Slides + Titres-->
+                    </div>
+
+                    <!-- Controls du carousel (préciser l'id de la div qui contient le carousel)-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--Fin .carousel-->
+        </section>
+
+        <!--Début section#basket-->
+        <section id="basket" class="flex-column-centre">
+            <table id="historique" class="main__historique">
+                <thead class="main__historique-titre">
+                <tr>
+                    <th>id</th>
+                    <th>opération</th>
+                    <th>reponse</th>
+                    <th>correct ?</th>
+                </tr>
+                </thead>
+                <tbody id="tentatives"></tbody>
+            </table>
+            <!-- <div id="blocTitrePanier" class="flex-start size80">
+                <h2 id="titre-panier">
+                    VEUILLEZ AJOUTER PRODUITS AU PANIER
+                </h2>
+            </div>
+         
+            <div id="basket-fiche" class="flex-around">
+                <div id="injectJs">
+                    <div id="basketProduit" class="flex-around">
+                        <div id="blocImage">
+                            <img src="assets/img/debardeur-homme-noir.jpg" alt="">
+                        </div>
+                        <div id="blocProduit" class="flex-column-around">
+                            <h2>Produit</h2>
+                            <p>vernis</p>
+                            <p>0E</p>
+                            <p>Ref 00000</p>
+                            <p>en stock</p>
+                        </div>
+                        <div id="bloc-change-produit" class="flex-around">
+                            <div class="felx-centre">
+                                <button class="bouton-moins">-</button>
+                                <span class="produit-quantite">0</span>
+                                <button class="bouton-plus">+</button>
+                            </div>
+                            <div><p>0 E</p></div>
+                            <div>Icone supprimer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="basket-recap">
+                    <h2 class="titre-recap">Récapitulatif </h2>
+                    <div class="flex-around">
+                        <p id="nbArticle">Cart Subtotal</p>
+                        <p id="prixArtcile">0 E</p>
+                    </div>
+                    <div class="flex-around">
+                        <p>Shipping/p>
+                        <p id="prixLivraison">Free</p>
+                    </div>
+                    <hr>
+                    <div class="flex-around">
+                        <h3>You Pay</h3>
+                        <p id="prixTTC">0</p>
+                    </div>
+                    <button>CHECKOUT</button>
+                </div>
+            </div>         -->
+        <!--Fin section#basket-->
+        </section>
+    <!--Fin du main-->
+    </main>
+
+    <!--Début Footer-->
+    <footer>
+
+        <!--Début .list-footer-->
+        <div class="list-footer">
+
+            <!--Div qui contient les 4 listes footer-->
+            <div class="list-inner">
+
+                <!--Liste-->
+                <div class="list">
+
+                    <p class="footer-titre">Contact</p>
+
+                    <address>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                        <a href="tel:+13115552368">(311) 555-2368</a><br>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a>
+                    </address>
+
+                </div>
+
+                <!--Liste-->
+                <div class="list">
+
+                    <p class="footer-titre">Contact</p>
+
+                    <address>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                        <a href="tel:+13115552368">(311) 555-2368</a><br>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a>
+                    </address>
+
+                </div>
+
+                <!--Liste-->
+                <div class="list">
+
+                    <p class="footer-titre">Contact</p>
+
+                    <address>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                        <a href="tel:+13115552368">(311) 555-2368</a><br>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a>
+                    </address>
+
+                </div>
+
+                <!--Liste-->
+                <div class="list">
+
+                    <p class="footer-titre">Contact</p>
+
+                    <address>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                        <a href="tel:+13115552368">(311) 555-2368</a><br>
+                        <a href="mailto:jim@rock.com">jim@rock.com</a>
+                    </address>
+
+                </div>
+
+                <!--Fin Div qui contient les 4 listes footer-->
+            </div>
+            <!--Fin .list-footer-->
+        </div>
+        <!--Fin du footer-->
+    </footer>
+     <!--CDN JQUERY-->
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <!--JAVASCRIPT-->
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

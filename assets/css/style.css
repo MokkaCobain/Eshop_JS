@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;500;600;700;800&display=swap");
+/* RESET ERIC MEYER */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* COULEURS PRINCIPALES DU SITE */
+/*** Header ***/
+header {
+  display: flex;
+  flex-direction: column;
+  /*** La NavBar ***/
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  /*** Barre de recherche ***/
+  /*** 3 icones ***/
+}
+header .top .logo {
+  width: 10%;
+}
+header .top .logo #logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+header .top #recherche {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+header .top #recherche #categories-select, header .top #recherche input, header .top #recherche button {
+  margin: 0;
+  padding: 1rem 0.5rem;
+}
+header .top #recherche input {
+  padding-right: 10rem;
+}
+header .top #recherche button {
+  background-color: #212121;
+  border: none;
+}
+header .top #recherche button .fa-search {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+header .top .icone-header {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .top .icone-header a {
+  color: black;
+}
+header .top .fa {
+  align-self: center;
+  font-size: 1.5rem;
+}
+header #nav {
+  background-color: #212121;
+  padding: 1rem 2rem;
+}
+
+/*** Section bandeau ***/
+#bandeau {
+  position: relative;
+  height: auto;
+  background-color: rgba(152, 170, 192, 0.3);
+}
+#bandeau #bandeauCarousel {
+  position: relative;
+  width: auto;
+  background-color: #fff;
+}
+#bandeau #bandeauCarousel .carousel-inner {
+  position: relative;
+  width: auto;
+  height: 100%;
+  padding-top: 0.5rem;
+}
+#bandeau #bandeauCarousel .carousel-inner > * {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#bandeau #bandeauCarousel .carousel-inner .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#bandeau #bandeauCarousel .carousel-inner .carousel-item .carousel-titre {
+  width: 45%;
+  padding: 5rem 10rem;
+  /******** Texte ********/
+  color: #212121;
+  text-align: left;
+}
+#bandeau #bandeauCarousel .carousel-inner .carousel-item .carousel-titre h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+#bandeau #bandeauCarousel .carousel-inner .carousel-item .carousel-titre p {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+#bandeau #bandeauCarousel .carousel-inner .carousel-item .carousel-titre button {
+  background-color: #212121;
+  color: #fafafa;
+}
+
+/******** Images du Carousel ********/
+#slideUne {
+  background-image: url(https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+  background-position: cover;
+}
+
+/*** Section produits ***/
+#produits {
+  background-color: rgba(152, 170, 192, 0.3);
+  position: relative;
+}
+#produits .shopping-cards {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+#produits .shopping-cards .cards-inner {
+  width: auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#produits .shopping-cards .cards-inner .card {
+  width: 20%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-style: none;
+}
+#produits .shopping-cards .cards-inner .card .card-text {
+  font-weight: 700;
+}
+#produits .shopping-cards .cards-inner .card .ajouterPanier {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*** Section Bottom ***/
+#bottom {
+  background-color: rgba(152, 170, 192, 0.3);
+}
+#bottom .bottom-grey .payments-inner {
+  background-color: #f0f3f4d9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#bottom .bottom-grey .payments-inner .payment {
+  width: 20%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /*Texte */
+}
+#bottom .bottom-grey .payments-inner .payment i {
+  font-size: 2rem;
+}
+#bottom .bottom-grey .payments-inner .payment .payment-titre {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#bottom .bottom-grey .payments-inner .payment .payment-text {
+  font-weight: 400;
+}
+
+/** Footer **/
+footer {
+  background-color: #000000;
+}
+
+/* MON RESET */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: inherit;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+}
+
+/* Sizing des principales parties */
+header {
+  height: auto;
+}
+
+main {
+  height: 70%;
+  width: auto;
+}
+
+footer {
+  height: 15vh;
+}
