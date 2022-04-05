@@ -27,17 +27,17 @@ export class Product {
         return this.#unitPrice;
     }
 
-    // get quantity(){
-    //     return this.#quantity;
-    // }
+    get quantity(){
+        return this.#quantity;
+    }
 
     get total(){
         return this.#total;
     }
 
-    // set quantity(quantity){
-    //     return this.#quantity = quantity;
-    // }
+    set quantity(quantity){
+        return this.#quantity = quantity;
+    }
 
     set total(total){
         return this.#total = total;

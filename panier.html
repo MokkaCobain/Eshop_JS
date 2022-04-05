@@ -205,67 +205,28 @@
         </section>
 
         <!--Début section#basket-->
-        <section id="basket" class="flex-column-centre">
-            <table id="historique" class="main__historique">
+        <section id="basket" class="d-flex flex-column w-75 mx-auto mt-4">
+            <table id="historique" class="main__historique w-100">
                 <thead class="main__historique-titre">
                 <tr>
-                    <th>id</th>
-                    <th>opération</th>
-                    <th>reponse</th>
-                    <th>correct ?</th>
+                    <th>PRODUCT</th>
+                    <th>NAME</th>
+                    <th>UNIT PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                    <th><button class="clear-cart"><i class="fa fa-trash"></i></button></th>
                 </tr>
                 </thead>
-                <tbody id="tentatives"></tbody>
+                <tbody id="tentatives">
+                    <!-- <tr>
+                        <td class="imgProduct"><img src="assets/img/robe-de-chambre-homme.jpg" alt="imgProduct" class="imgProduct"></td>
+                        <td><h2 id="titreProduct">Women Dress</h2><p id="descProduct">Lorem ipsum dolor sit amet consectetur adipisicing</p></td>
+                        <td>$0</td>
+                        <td></td> -->
+                    </tr>
+                </tbody>
             </table>
-            <!-- <div id="blocTitrePanier" class="flex-start size80">
-                <h2 id="titre-panier">
-                    VEUILLEZ AJOUTER PRODUITS AU PANIER
-                </h2>
-            </div>
-         
-            <div id="basket-fiche" class="flex-around">
-                <div id="injectJs">
-                    <div id="basketProduit" class="flex-around">
-                        <div id="blocImage">
-                            <img src="assets/img/debardeur-homme-noir.jpg" alt="">
-                        </div>
-                        <div id="blocProduit" class="flex-column-around">
-                            <h2>Produit</h2>
-                            <p>vernis</p>
-                            <p>0E</p>
-                            <p>Ref 00000</p>
-                            <p>en stock</p>
-                        </div>
-                        <div id="bloc-change-produit" class="flex-around">
-                            <div class="felx-centre">
-                                <button class="bouton-moins">-</button>
-                                <span class="produit-quantite">0</span>
-                                <button class="bouton-plus">+</button>
-                            </div>
-                            <div><p>0 E</p></div>
-                            <div>Icone supprimer</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="basket-recap">
-                    <h2 class="titre-recap">Récapitulatif </h2>
-                    <div class="flex-around">
-                        <p id="nbArticle">Cart Subtotal</p>
-                        <p id="prixArtcile">0 E</p>
-                    </div>
-                    <div class="flex-around">
-                        <p>Shipping/p>
-                        <p id="prixLivraison">Free</p>
-                    </div>
-                    <hr>
-                    <div class="flex-around">
-                        <h3>You Pay</h3>
-                        <p id="prixTTC">0</p>
-                    </div>
-                    <button>CHECKOUT</button>
-                </div>
-            </div>         -->
+           
         <!--Fin section#basket-->
         </section>
     <!--Fin du main-->
@@ -342,6 +303,7 @@
      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
      <!--JAVASCRIPT-->
     <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/panier.js"></script>
 </body>
 
 </html>

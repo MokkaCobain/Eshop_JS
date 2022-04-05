@@ -63,7 +63,7 @@
       <div class="icone-header">
         <a href=""><i class="fa fa-heart"></i></a>
         <a href=""><i class="fa fa-user"></i></a>
-        <a href="panier.html"><i class="fa fa-shopping-bag"></i></a> 
+        <a href="" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-bag"></i>(<span class="total-count"></span>)</a> 
       </div>
       <!--Fin Div .top-->
     </div>
@@ -222,7 +222,7 @@
                 <div class="ajouterPanier">
                   <p id="unitPrice" class="card-text price" data-price="28">$28.00</p>
                   <!--Bouton ajouterPanier-->
-                  <button class="btn btn-primary add-to-cart" type="submit">Ajouter au panier</button>
+                  <button class="btn btn-primary add-to-cart" type="submit" data-name="Women Dress" data-price="28">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -409,6 +409,7 @@
    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
    <!--JAVASCRIPT-->
   <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/panier.js"></script>
 
 </body>
 

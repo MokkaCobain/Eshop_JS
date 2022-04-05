@@ -230,6 +230,25 @@ footer {
   background-color: #000000;
 }
 
+#basket {
+  background-color: rgba(152, 170, 192, 0.3);
+  padding: 1rem;
+}
+#basket #historique {
+  background-color: #fafafa;
+}
+#basket #historique thead {
+  background-color: orange;
+  font-size: 1.2rem;
+  color: white;
+}
+#basket #historique thead th {
+  padding: 1rem;
+}
+#basket #historique .imgProduct {
+  width: 20%;
+}
+
 /* MON RESET */
 html {
   box-sizing: border-box;

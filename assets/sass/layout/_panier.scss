@@ -1,0 +1,24 @@
+#basket {
+
+    background-color: $blue;
+    padding : 1rem;
+
+    #historique{
+        
+        background-color: $white;
+        thead {
+            
+            background-color: orange;
+            font-size : 1.2rem;
+            color : white;
+
+            th {
+                padding : 1rem;
+            }
+        }
+
+        .imgProduct {
+            width : 20%;
+        }
+    }
+}
